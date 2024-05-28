@@ -10,6 +10,8 @@ import Team from './components/Team.jsx'
 import Navbar from './components/Navbar.jsx'
 import data from './utils/teamData.js'
 import Hero from './components/Hero.jsx'
+import Schedule from './components/Schedule.jsx'
+import About from './components/About.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,10 +21,12 @@ function App() {
   return (
     <>
       {/* Container for side padding */}
-      <div className='mx-32'>
+      <div className='mx-1/10'>
         <Navbar />
 
         <Hero />
+        <About />
+        <Schedule />
         <Team team={testTeam} />
         <Teams />
       </div>
