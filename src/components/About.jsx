@@ -6,10 +6,11 @@ const About = () => {
             <div className='h-[600px] border border-red-500'>
                 <div className='flex w-full h-full justify-center items-center border border-blue-500'>
                     <h1>About</h1>
+                    
+                    </div>
                 </div>
-            </div>
-        </>
-    )
+            </>
+            )
 }
 
-export default About
+            export default About

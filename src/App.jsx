@@ -12,6 +12,7 @@ import data from './utils/teamData.js'
 import Hero from './components/Hero.jsx'
 import Schedule from './components/Schedule.jsx'
 import About from './components/About.jsx'
+import Phoenix from './components/Phoenix.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
         <Navbar />
 
         <Hero />
+        <Phoenix />
         <About />
         <Schedule />
         <Team team={testTeam} />
