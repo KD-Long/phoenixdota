@@ -32,7 +32,7 @@ const Phoenix = () => {
                     <video
                         ref={videoRef}
                         id = "phoenix_vid"
-                        className="border border-green-500"
+                        className=" -z-10 border border-green-500"
                         // poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/phoenix.png"
                         autoPlay
                         preload="auto"
