@@ -4,13 +4,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
-            {/* <div className='h-[600px] border border-red-500'>
-        <div className='flex w-full h-full justify-center items-center border border-blue-500'>
-            <h1>Hero div</h1>
-        </div>
-    </div> */}
-            <div className="hero min-h-screen" style={{ backgroundImage: 'url(/phoenix_hero.png)' }}>
-                <div className="hero-overlay bg-black bg-opacity-70"></div>
+            <div className="flex w-full min-h-[75vh] items-center justify-center">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold text-white">AUS/SEA Dota League</h1>
@@ -18,11 +12,11 @@ const Hero = () => {
 
                         <div className='flex justify-center'>
                             <a href='https://discord.gg/MwK8fJd5cT'>
-                                <button className="btn bg-discord text-white mx-2">
+                                <button className="btn bg-discord text-white mx-2 rounded-lg">
                                     Join our discord<span><img src='/discord-mark-white.png' className='w-6 h-6' /></span>
                                 </button>
                             </a>
-                            <button className="btn bg-white text-black mx-2"><a href='https://docs.google.com/forms/d/e/1FAIpQLSfkWDEXMjKpZeltM7p-fbW1Zq1PmnIivDdpd3jlqF7-CLA0Fw/viewform'>Sign up to a league</a></button>
+                            <button className="btn bg-white text-black mx-2 rounded-lg"><a href='https://docs.google.com/forms/d/e/1FAIpQLSfkWDEXMjKpZeltM7p-fbW1Zq1PmnIivDdpd3jlqF7-CLA0Fw/viewform'>Sign up to a league</a></button>
                         </div>
                     </div>
                 </div>

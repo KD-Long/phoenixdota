@@ -27,12 +27,12 @@ const Phoenix = () => {
 
     return (
         <>
-            <div className='h-[600px] border border-red-500'>
+            <div className='border border-red-500'>
                 <div className='flex w-full h-full justify-center items-center border border-blue-500'>
                     <video
                         ref={videoRef}
                         id = "phoenix_vid"
-                        className=" -z-10 border border-green-500"
+                        className=" -z-10 max-h-[50vh] border border-green-500"
                         // poster="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/phoenix.png"
                         autoPlay
                         preload="auto"

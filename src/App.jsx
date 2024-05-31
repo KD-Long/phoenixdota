@@ -28,8 +28,10 @@ function App() {
     <>
 
 
-      {/* Container for side padding */}
-      {/* <div className='mx-1/10'> */}
+      {/* background fade */}
+      {/* <div class="_1keusz4ZyZirGepu6hHG0D" style="background: linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.733) 100%, rgb(0, 0, 0) 100%);"></div> */}
+      {/* <div className='bg-gradient-to-b from-transparent via-transparent to-black'> */}
+      {/* <div className='bg-white bg-gradient-to-b '> */}
       <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
