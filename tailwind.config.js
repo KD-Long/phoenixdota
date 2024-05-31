@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        discord: '#5865F2',
+      },
       spacing: {
         '1/2': '50%',
         '1/4': '25%',
