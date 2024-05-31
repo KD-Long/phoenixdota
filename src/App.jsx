@@ -16,6 +16,7 @@ import About from './components/About.jsx'
 import Phoenix from './routes/Phoenix.jsx'
 import GoogleForm from './components/GoogleForm.jsx'
 import Landing from './routes/Landing.jsx';
+import Leagues from './routes/Leagues.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,8 +36,8 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/leagues" element={<Leagues />} />
           <Route path="/about" element={<About />} />
-          <Route path="/phoenix" element={<Phoenix />} />
         </Routes>
 
         {/* footer TODO */}

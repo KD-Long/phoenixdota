@@ -22,14 +22,17 @@ const Navbar = () => {
 
                 <a
                     className="btn btn-ghost text-xl px-[70px]"
-                    onClick={() => navigate('/phoenix')}
+                    onClick={() => navigate('/leagues')}
                 >
-                    Leagues<span className='text-orange-500'>Dota</span>
+                    Leagues
+                    {/* <span className='text-orange-500'>Dota</span> */}
                 </a>
                 <a
                     className="btn btn-ghost text-xl px-[70px]"
                     onClick={() => navigate('/about')}
-                >About<span className='text-orange-500'>Dota</span></a>
+                >About
+                {/* <span className='text-orange-500'>Dota</span> */}
+                </a>
 
             </div >
 

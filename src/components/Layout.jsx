@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Layout = ({ children }) => {
     return (
@@ -21,8 +22,10 @@ const Layout = ({ children }) => {
                 <div className="relative z-10 ">
                     {/* Your content here */}
                     {children}
+                    {/* <Footer /> */}
                 </div>
             </div>
+            
         </div>
 
     )

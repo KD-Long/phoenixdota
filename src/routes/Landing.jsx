@@ -10,6 +10,7 @@ import Phoenix from '../routes/Phoenix.jsx'
 import GoogleForm from '../components/GoogleForm.jsx'
 
 import data from '../utils/teamData.js'
+import LeagueIntro from '../components/LeagueIntro.jsx';
 
 
 const Landing = () => {
@@ -35,10 +36,10 @@ const Landing = () => {
 
             <Hero />
             {/* <GoogleForm /> */}
-            
-            <About />
+            <LeagueIntro />
+            {/* <About /> */}
             <Phoenix />
-            <Schedule />
+            {/* <Schedule /> */}
             <Team team={testTeam} />
             <Teams />
         </>
