@@ -8,9 +8,9 @@ const Team = ({ team }) => {
     console.log(team)
     return (
         <>
-            <h1>{team.name}</h1>
-            <div className='border border-red-500'>
 
+            <div className='border border-red-500'>
+                <h1>{team.name}</h1>
                 {/* Player Table */}
                 <div className="overflow-x-auto">
                     <table className="table">
@@ -28,7 +28,7 @@ const Team = ({ team }) => {
                             {team.players.map((player, i) => (
                                 <tr key={i}>
                                     <th>{i + 1}</th>
-                                    <td ><img  src={`./vite.svg`} /></td>
+                                    <td ><img src={`./vite.svg`} /></td>
                                     <td>{player.name}</td>
                                     <td>{player.steamID}</td>
                                     <td>

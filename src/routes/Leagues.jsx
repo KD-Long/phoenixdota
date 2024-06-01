@@ -1,11 +1,12 @@
 import React, { useState, useRef } from 'react'
+import Division from '../components/Division';
 
 
 
 const Leagues = () => {
 
     const [selectedSeason, setSelectedSeason] = useState('Season 1');
-    const [dropdown, setDropdown] = useState('closed')
+
     const tabs = [
         "Main",
         "Intermediate",
@@ -38,13 +39,14 @@ const Leagues = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className='flex w-full h-1/2 justify-center border border-blue-500'>
-                    <div role="tablist" className="tabs tabs-bordered border border-blue-500">
+                <div className='flex min-h-[75vh] justify-center border border-green-500'>
+                    <div role="tablist" className="tabs tabs-bordered w-full border border-blue-500">
                         {tabs.map((item) => (
                             <>
                                 <div role="tab" onClick={() => setSelectedTabName(item)} className={selectedTabName === item ? "tab tab-active" : "tab"}> {item} </div>
                                 <div role="tabpanel" className="tab-content p-10">
-                                    {item}
+                                    {item +" Division"}
+                                    <Division />
                                 </div>
                             </>
                         ))}
