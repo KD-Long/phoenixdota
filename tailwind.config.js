@@ -8,6 +8,14 @@ export default {
     extend: {
       colors: {
         discord: '#5865F2',
+        herald: '#525F25',
+        guardian: '#4A3117',
+        crusader: '#168079',
+        archon: '#73A980',
+        legend: '#5F002F',
+        ancient: '#7348A6',
+        divine: '#D7C349',
+        immortal: '#98221',
       },
       spacing: {
         '1/2': '50%',
@@ -25,7 +33,7 @@ export default {
   ],
   daisyui: {
     themes: [
-      'black', 
+      'black',
       'light',
       'cupcake',
       'dark',
