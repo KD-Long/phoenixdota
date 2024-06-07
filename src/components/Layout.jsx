@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
                 <div
                     className="h-full w-full min-h-[75vh] bg-repeat-x"
                     style={{
-                        backgroundImage: `url('./anubis.jpg')`,
+                        backgroundImage: `url('/anubis.jpg')`,
                         backgroundSize: 'auto 100%', // Maintain image height while allowing width to repeat
                         backgroundPosition: 'top',
                     }}

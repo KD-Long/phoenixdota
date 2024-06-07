@@ -7,6 +7,7 @@ const data = {
                 "name": "Main",
                 "teams": [
                     {
+                        "id": 0,
                         "name": "GINGERBREAD",
                         "region": "SEA",
                         "players": [
@@ -20,6 +21,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 1,
                         "name": "GOON SQUAD",
                         "region": "SEA",
                         "players": [
@@ -32,6 +34,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 2,
                         "name": "NEW CHEESE",
                         "region": "AUS",
                         "players": [
@@ -46,6 +49,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 3,
                         "name": "GLUTE SPREADERS",
                         "region": "AUS",
                         "players": [
@@ -59,6 +63,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 4,
                         "name": "BRAVE WANDERERS",
                         "region": "SEA",
                         "players": [
@@ -73,6 +78,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 5,
                         "name": "BANDAL SABEGE",
                         "region": "SEA",
                         "players": [
@@ -87,6 +93,7 @@ const data = {
                         ]
                     },
                     {
+                        "id": 6,
                         "name": "LITTLE PIGGIES",
                         "region": "AUS",
                         "players": [

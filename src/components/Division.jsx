@@ -1,4 +1,4 @@
-import React,{useState }from 'react'
+import React, { useState } from 'react'
 import Teams from './Teams'
 import Schedule from './Schedule'
 import Standings from './Standings'
@@ -15,7 +15,7 @@ const Division = () => {
     return (
         <>
             {/* Tabs */}
-            <div className='flex w-full min-h-[75vh] justify-center border border-blue-500'>
+            {/* <div className='flex w-full min-h-[75vh] justify-center border border-blue-500'>
                 <div role="tablist" className="tabs tabs-bordered  w-full border border-blue-500">
                     {tabs.map((item) => (
                         <>
@@ -29,11 +29,18 @@ const Division = () => {
                             </div>
                         </>
                     ))}
-
-
                 </div>
+            </div> */}
+
+            <div>
+                <Teams />
+                <Standings />
+                <Schedule />
 
             </div>
+
+
+
         </>
     )
 }

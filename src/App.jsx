@@ -21,7 +21,7 @@ import Leagues from './routes/Leagues.jsx';
 function App() {
   const [count, setCount] = useState(0)
 
-  
+
 
 
 
@@ -34,13 +34,14 @@ function App() {
       {/* <div className='bg-gradient-to-b from-transparent via-transparent to-black'> */}
       {/* <div className='bg-white bg-gradient-to-b '> */}
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/leagues" element={<Leagues />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/leagues" element={<Leagues />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team/:id" element={<Team />} />
+      </Routes>
 
-        {/* footer TODO */}
+      {/* footer TODO */}
       {/* </div> */}
 
 

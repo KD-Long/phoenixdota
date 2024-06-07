@@ -13,17 +13,16 @@ const Teams = () => {
                     {/* head */}
                     <thead>
                         <tr>
-                            <th></th>
+ 
                             <th>Name</th>
                             <th>Icon</th>
                             <th>DotaBuff</th>
-                            <th>Details</th>
+                            <th>Players</th>
                         </tr>
                     </thead>
                     <tbody>
                         {data.season0.leagues[0].teams.map((team, i) => (
                             <tr key={i}>
-                                <th>{i+1}</th>
                                 <td>{team.name}</td>
                                 <td><img src="./vite.svg" /></td>
                                 <td>

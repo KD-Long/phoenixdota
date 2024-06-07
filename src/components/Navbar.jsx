@@ -14,7 +14,7 @@ const Navbar = () => {
                     className="btn btn-ghost text-xl px-[70px]"
                     onClick={() => navigate('/')}
                 >
-                    <img className=" h-10 w-10 object-contain" src='./pd_logo_540x540.png'></img>
+                    <img className=" h-10 w-10 object-contain" src='/pd_logo_540x540.png'></img>
                     <span className=''>Phoenix</span>
                     <span className='text-orange-500'>Dota</span>
                 </a>
