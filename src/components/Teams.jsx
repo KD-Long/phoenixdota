@@ -1,9 +1,11 @@
 import React from 'react'
 import data from '../utils/teamData.js'
+import { useNavigate } from 'react-router-dom';
 
 // id Name DBUFF Details
 
 const Teams = () => {
+    const navigate = useNavigate();
     
     return (
         <>
@@ -30,7 +32,7 @@ const Teams = () => {
                                         <img src="/dotabuff_favicon.ico" />
                                     </a>
                                 </td>
-                                <td>Details ...TODO</td>
+                                <td><button className='btn rounded-lg' onClick={()=> navigate(`/team/${team.id}`)}>Team details {">"}</button></td>
                             </tr>
                         ))}
                     </tbody>

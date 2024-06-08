@@ -8,7 +8,7 @@ const Standings = () => {
         <>
             <div className='h-[600px] border border-red-500'>
                 <div className='flex w-full h-full justify-center items-center border border-blue-500'>
-                    <h1>Schedule div</h1>
+                    <h1>Stats div</h1>
                     <Team team={testTeam}/>
                 </div>
             </div>

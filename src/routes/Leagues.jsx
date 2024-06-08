@@ -24,10 +24,10 @@ const Leagues = () => {
     }
     return (
         <>
-            <div className='h-[600px] '>
+            <div className='px-10'>
                 {/* <div className=' relative w-full  border border-red-500'> */}
                 <div className='flex border border-red-500'>
-                    <details id="dropdown-details" className="dropdown mx-auto  border border-red-500 closed">
+                    <details id="dropdown-details" className="dropdown border border-red-500 closed">
                         {/* &nbsp; == space */}
                         {/* &#9660 == arrow */}
                         <summary className="m-1 btn open">{selectedSeason} &nbsp; &#9660;</summary>
