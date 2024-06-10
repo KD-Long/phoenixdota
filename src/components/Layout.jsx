@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 const Layout = ({ children }) => {
     return (
-        <div className="relative h-full">
+        <div className="relative h-full ">
             <div className="h-1/2 flex justify-center items-center">
                 <div
                     className="h-full w-full min-h-[75vh] bg-repeat-x"

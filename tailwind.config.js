@@ -16,6 +16,7 @@ export default {
         ancient: '#7348A6',
         divine: '#D7C349',
         immortal: '#98221',
+        softOrange: '#F3A457',
       },
       spacing: {
         '1/2': '50%',

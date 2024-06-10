@@ -11,6 +11,7 @@ import GoogleForm from '../components/GoogleForm.jsx'
 
 import data from '../utils/teamData.js'
 import LeagueIntro from '../components/LeagueIntro.jsx';
+import DivisonCards from '../components/DivisonCards.jsx';
 
 
 const Landing = () => {
@@ -36,12 +37,12 @@ const Landing = () => {
 
             <Hero />
             {/* <GoogleForm /> */}
-            <LeagueIntro />
+            <DivisonCards />
             {/* <About /> */}
             <Phoenix />
             {/* <Schedule /> */}
             <Team team={testTeam} />
-            <Teams />
+            {/* <Teams /> */}
         </>
     )
 }

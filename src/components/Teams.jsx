@@ -1,43 +1,39 @@
 import React from 'react'
 import data from '../utils/teamData.js'
+import Season_1 from '../utils/Season_1.js'
 import { useNavigate } from 'react-router-dom';
+import TeamCard from './TeamCard.jsx';
 
 // id Name DBUFF Details
 
-const Teams = () => {
+// div is the selected divison as a string e.g "main"
+const Teams = ({ div }) => {
     const navigate = useNavigate();
-    
+    const data_div = Season_1[div]
+    // console.log("data_div: ",data_div)
+    // console.log("div: ",div)
     return (
         <>
-            <h1>Team list</h1>
-            <div className="overflow-x-auto">
-                <table className="table">
-                    {/* head */}
-                    <thead>
-                        <tr>
- 
-                            <th>Name</th>
-                            <th>Icon</th>
-                            <th>DotaBuff</th>
-                            <th>Players</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.season0.leagues[0].teams.map((team, i) => (
-                            <tr key={i}>
-                                <td>{team.name}</td>
-                                <td><img src="./vite.svg" /></td>
-                                <td>
-                                    <a href='https://www.dotabuff.com/search?q=76561198065323370&commit=Search'>
-                                        <img src="/dotabuff_favicon.ico" />
-                                    </a>
-                                </td>
-                                <td><button className='btn rounded-lg' onClick={()=> navigate(`/team/${team.id}`)}>Team details {">"}</button></td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+            {Object.keys(data_div.groups).map(teamKey => {
+                // console.log(`Key: ${teamKey}, Value: ${data_div.groups[teamKey]}`);
+                let group = data_div.groups[teamKey]
+                // console.log("Group xxxxx:", group)
+                return (
+                    <div key={teamKey } className=' bg-primary'>
+                        <h1 className='text-2xl text-black bg-softOrange text-center font-bold py-5'>
+                            {(`${div} Division ${teamKey}`).toLocaleUpperCase()}
+                        </h1>
+                        {/* Note to self gona have to chnage this for 1 for small screens */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-4 ">
+                            {
+                                group.map((teamData, i) => (
+                                    <TeamCard key={i} teamData={teamData} />
+                                ))
+
+                            }
+                        </div>
+                    </div>)
+            })}
         </>
     )
 }

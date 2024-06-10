@@ -38,8 +38,9 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/leagues" element={<Leagues />} />
         <Route path="/about" element={<About />} />
-        <Route path="/team/:id" element={<Team />} />
+        <Route path="/team/:name" element={<Team />} />
       </Routes>
+
 
       {/* footer TODO */}
       {/* </div> */}

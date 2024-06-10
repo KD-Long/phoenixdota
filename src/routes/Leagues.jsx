@@ -24,10 +24,12 @@ const Leagues = () => {
     }
     return (
         <>
-            <div className='px-10'>
-                {/* <div className=' relative w-full  border border-red-500'> */}
-                <div className='flex border border-red-500'>
-                    <details id="dropdown-details" className="dropdown border border-red-500 closed">
+            {/* Padding for screen size */}
+            <div className='md:px-1/10'>
+
+                {/* season selector */}
+                <div className='flex'>
+                    <details id="dropdown-details" className="dropdown closed">
                         {/* &nbsp; == space */}
                         {/* &#9660 == arrow */}
                         <summary className="m-1 btn open">{selectedSeason} &nbsp; &#9660;</summary>
@@ -39,24 +41,29 @@ const Leagues = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className='flex min-h-[75vh] justify-center border border-green-500'>
-                    <div role="tablist" className="tabs tabs-bordered w-full border border-blue-500">
-                        {tabs.map((item) => (
-                            <>
-                                <div role="tab" onClick={() => setSelectedTabName(item)} className={selectedTabName === item ? "tab tab-active" : "tab"}> {item} </div>
-                                <div role="tabpanel" className="tab-content p-10">
-                                    {item +" Division"}
-                                    <Division />
+                <div className='flex min-h-[75vh] justify-center '>
+                    <div role="tablist" className="tabs tabs-bordered overflow-x-auto w-full">
+                        {tabs.map((item, i) => (
+                            // This is a normal frag <></> but im overiddting so i can assign a Key to prevent warning
+                            <React.Fragment key={item + i}>
+                                <div role="tab"
+                                    onClick={() => setSelectedTabName(item)}
+                                    className={selectedTabName === item ? "tab tab-active" : "tab"}
+                                >
+                                    {item}
                                 </div>
-                            </>
+                                <div role="tabpanel" className="tab-content py-10">
+                                    <Division div={item.toLocaleLowerCase()} />
+                                </div>
+                            </React.Fragment>
                         ))}
 
-                    
+
                     </div>
 
                 </div>
-            </div>
 
+            </div>
         </>
     )
 }

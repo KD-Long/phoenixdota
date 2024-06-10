@@ -1,4 +1,5 @@
 import React from 'react'
+import DivisonCards from './DivisonCards'
 
 const About = () => {
     const rulesGdocsUrl = 'https://docs.google.com/document/d/e/2PACX-1vTkWKo1_PHsV8N8IBtXVPa68nwXeB6RgAPa0KE4f2FMksxg_arcT3Agd0YGF0SXrViccwElIWkF2eLa/pub?embedded=true'
@@ -27,58 +28,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* DIVISIONS */}
-            {/* Container */}
-            <div className='m-10'>
-                <div className='flex w-full justify-center space-x-8 '>
-                    <div className="card w-96 bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/herald.webp" alt="Herald" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Main Division
-                                {/* <div className="badge badge-secondary">NEW</div> */}
-                            </h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions justify-end">
-                                <div className="badge badge-outline rounded-lg text-herald">Herlad</div>
-                                <div className="badge badge-outline rounded-lg text-guardian">Guardian</div>
-                                <div className="badge badge-outline rounded-lg text-crusader">Crusader</div>
-                                <div className="badge badge-outline rounded-lg text-archon">Archon</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card w-96 bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/legend.webp" alt="Legend" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Intermediate Division
-
-                            </h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions justify-end">
-                                <div className="badge badge-outline rounded-lg text-legend">Legend</div>
-                                <div className="badge badge-outline rounded-lg text-ancient">Ancient</div>
-                                <div className="badge badge-outline rounded-lg text-divine">Divine</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card w-96 bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/immortal.webp" alt="Immortal" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Upper Division
-                            </h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions justify-end">
-                                <div className="badge badge-outline rounded-lg text-divine">Divine</div>
-                                <div className="badge badge-outline rounded-lg text-immortal">Immortal</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <DivisonCards />
 
             {/* league Format */}
             <div>

@@ -3,7 +3,8 @@ import Teams from './Teams'
 import Schedule from './Schedule'
 import Standings from './Standings'
 
-const Division = () => {
+const Division = ({div}) => {
+    console.log("Division: ",div)
 
     const tabs = [
         "Standings",
@@ -32,8 +33,8 @@ const Division = () => {
                 </div>
             </div> */}
 
-            <div>
-                <Teams />
+            <div className=''>
+                <Teams div={div}/>
                 <Standings />
                 <Schedule />
 

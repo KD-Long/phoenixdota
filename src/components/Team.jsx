@@ -18,13 +18,13 @@ const Team = () => {
         let allTeams = data.season0.leagues[0].teams
 
         for (let i = 0; i < allTeams.length; i++) {
-            console.log(allTeams[i].name)
+            // console.log(allTeams[i].name)
             if (allTeams[i].id == id) {
                 setTeam(allTeams[i])
-                console.log('set triggered')
+                // console.log('set triggered')
             }
         }
-        console.log(team)
+        // console.log(team)
 
 
     }, [])
