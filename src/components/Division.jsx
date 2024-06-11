@@ -35,7 +35,7 @@ const Division = ({div}) => {
 
             <div className=''>
                 <Teams div={div}/>
-                <Standings />
+                <Standings div={div} />
                 <Schedule />
 
             </div>
