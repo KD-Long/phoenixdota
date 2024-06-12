@@ -18,8 +18,9 @@ const Teams = ({ div }) => {
                 // console.log(`Key: ${teamKey}, Value: ${data_div.groups[teamKey]}`);
                 let group = data_div.groups[teamKey]
                 // console.log("Group xxxxx:", group)
-                return (
-                    <div key={teamKey } className=' bg-primary'>
+                return (<>
+                    <h1 className='text-xl font-bold my-10'>TEAMS</h1>
+                    <div key={teamKey} className=' bg-primary'>
                         <h1 className='text-2xl text-black bg-softOrange text-center font-bold py-5'>
                             {(`${div} Division ${teamKey}`).toLocaleUpperCase()}
                         </h1>
@@ -32,7 +33,9 @@ const Teams = ({ div }) => {
 
                             }
                         </div>
-                    </div>)
+                    </div>
+                </>
+                )
             })}
         </>
     )

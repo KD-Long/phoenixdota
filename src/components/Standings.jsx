@@ -15,7 +15,7 @@ const Standings = ({ div }) => {
                     <Team team={testTeam}/>
                 </div>
             </div> */}
-            <h1 className='text-xl font-bold my-10'>LEADER BOARD</h1>
+            <h1 className='text-xl font-bold my-10'>LEADERBOARD</h1>
 
             <div className=''>
                 {/* AU section + fixture */}
