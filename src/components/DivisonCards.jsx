@@ -19,7 +19,7 @@ const DivisonCards = () => {
                             <p className='text-gray-400'>For the low mmr legends.</p>
                             <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p>
                             <div className="card-actions justify-end py-5">
-                                <div className="badge badge-outline rounded-lg text-herald">Herlad</div>
+                                <div className="badge badge-outline rounded-lg text-herald">Herald</div>
                                 <div className="badge badge-outline rounded-lg text-guardian">Guardian</div>
                                 <div className="badge badge-outline rounded-lg text-crusader">Crusader</div>
                                 <div className="badge badge-outline rounded-lg text-archon">Archon</div>

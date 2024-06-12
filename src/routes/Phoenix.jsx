@@ -11,15 +11,16 @@ const Phoenix = () => {
         let video= videoRef.current
         
         gsap.to(video, {
-            duration: 3.27,
+            // duration: 3.27,
+            duration: 10,
             repeat: -1,
             repeatRefresh: true,
             ease: 'power2.inOut',
             onRepeat: () => {
                 // console.log(video.currentTime)
-                console.log(video.currentTime)
+                // console.log(video.currentTime)
                 video.currentTime = 0;
-                console.log(video.currentTime)
+                // console.log(video.currentTime)
                 video.play();
             },
         });
@@ -40,8 +41,12 @@ const Phoenix = () => {
                         playsInline={true}
                     >
                         <source
+                            // type="video/mp4"
+
+                            // src="/pd_phoenix_test.mp4"
                             type="video/webm"
-                            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/phoenix.webm"
+                            src="/animated_fire.webm"
+                            // src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/phoenix.webm"
                         />
                         {/* <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/phoenix.png" /> */}
                     </video>
