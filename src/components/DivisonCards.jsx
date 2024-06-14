@@ -7,17 +7,26 @@ const DivisonCards = () => {
             {/* Container */}
             <div className='flex justify-center py-10 md:mx-1/10  '>
                 {/* <div className='flex w-full justify-center space-x-8 '> */}
-                <div className="grid grid-cols-1 px-4 max-w-max gap-4 justify-items-center sm:grid-cols-2 lg:grid-cols-3 ">
-                    
+                <div className="grid grid-cols-1 px-4 max-w-max gap-4 justify-items-center sm:grid-cols-2 lg:grid-cols-3 font-hammersmith-one">
+
                     <div className="card flex w-full max-w-96 items-center bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/herald.webp" alt="Herald" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
+
+                        <img
+                            className='w-3/4 mt-5'
+                            src="/other/mainDivPhoenix.png"
+                            alt="Main"
+                        />
+                        <div className="card-body items-center">
+
+                            <h2 className="card-title text-4xl">
                                 Main Division
                                 {/* <div className="badge badge-secondary">NEW</div> */}
                             </h2>
-                            <p className='text-gray-400'>For the low mmr legends.</p>
-                            <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p>
+                            <div className='min-h-1/2'>
+                                <p className='text-gray-400'>Training wheels required.</p>
+                                <p className='text-gray-400'>Freshly hatched chicks</p>
+                                <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p>
+                            </div>
                             <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-herald">Herald</div>
                                 <div className="badge badge-outline rounded-lg text-guardian">Guardian</div>
@@ -27,14 +36,22 @@ const DivisonCards = () => {
                         </div>
                     </div>
 
-                    <div className="card w-full max-w-96 bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/legend.webp" alt="Legend" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Intermediate Division
+                    <div className="card flex w-full max-w-96 items-center bg-base-200 shadow-xl rounded-lg">
+                        <img
+                            className='w-3/4 mt-5'
+                            src="/other/inermediateDivPhoenix.png"
+                            alt="Herald"
+                        />
+                        <div className="card-body items-center">
+
+                            <h2 className="card-title  text-4xl">
+                                Inter Division
                             </h2>
-                            <p className='text-gray-400'>For the wana be good bois.</p>
-                            <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}3000</span></p>
+                            <div className='min-h-1/2'>
+                                <p className='text-gray-400 '>Talented but unpolished.</p>
+                                <p className='text-gray-400'>Fiedglings unite</p>
+                                <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}3000</span></p>
+                            </div>
                             <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-legend">Legend</div>
                                 <div className="badge badge-outline rounded-lg text-ancient">Ancient</div>
@@ -43,14 +60,21 @@ const DivisonCards = () => {
                         </div>
                     </div>
 
-                    <div className="card w-full max-w-96 bg-base-200 shadow-xl rounded-lg">
-                        <figure><img src="/ranks/immortal.webp" alt="Immortal" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
+                    <div className="card flex w-full max-w-96 items-center bg-base-200 shadow-xl rounded-lg">
+                        <img
+                            className='w-3/4 mt-5'
+                            src="/other/upperDivPhoenix.png"
+                            alt="Herald"
+                        />
+                        <div className="card-body items-center">
+                            <h2 className="card-title text-4xl">
                                 Upper Division
                             </h2>
-                            <p className='text-gray-400'>For the try hard scrubs.</p>
-                            <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}5400</span></p>
+                            <div className='min-h-1/2'>
+                                <p className='text-gray-400'>Talented but unpolished.</p>
+                                <p className='text-gray-400'>Fiedglings unite</p>
+                                <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}5400</span></p>
+                            </div>
                             <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-divine">Divine</div>
                                 <div className="badge badge-outline rounded-lg text-immortal">Immortal</div>

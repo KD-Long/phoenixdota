@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <>
-            <div className="flex w-full min-h-[75vh] items-center justify-center">
+            <div className="flex w-full min-h-[75vh] mb-20 items-center justify-center">
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold text-white">Welcome to Phoenix <span className='text-orange-500'>Dota</span></h1>
