@@ -27,7 +27,7 @@ const FixtureSectionCard = ({ group }) => {
         // Map of teams such that:
         // key=teamName
         // value=[games,wins]
-        console.log("data: ",data)
+        console.log("data: ", data)
         let teamMap = new Map()
         data.forEach(match => {
             // if scores exist calc them otherwise set as 0
@@ -35,12 +35,10 @@ const FixtureSectionCard = ({ group }) => {
             const t2 = match.Score ? parseInt(match.Score[2]) : 0
             const total = t1 + t2
 
-            //if the match has been scored 
-            if (total != 0) {
-                //+= value to map
-                addToMap(teamMap, match["Team 1"], t1, total)
-                addToMap(teamMap, match["Team 2"], t2, total)
-            }
+            //+= value to map
+            addToMap(teamMap, match["Team 1"], t1, total)
+            addToMap(teamMap, match["Team 2"], t2, total)
+
         });
 
         //At this point our map will contain all scores
@@ -50,7 +48,7 @@ const FixtureSectionCard = ({ group }) => {
                 teamName: key,
                 seriesPlayed: value[1],
                 Points: value[0],
-                Win: (value[0] / value[1] * 100) //is a % will add symbol later
+                Win: value[1] == 0 ? 0 : (value[0] / value[1] * 100) //is a % will add symbol later // prevent divide by 0
             }
             result.push(row)
         }
