@@ -5,8 +5,6 @@ const GoogleSheetsTest = () => {
 
     const [data, setData] = useState([]);
 
-
-
     useEffect(() => {
         const fetchData = async () => {
             // published csv url

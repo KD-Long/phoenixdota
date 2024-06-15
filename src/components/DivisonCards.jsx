@@ -19,7 +19,7 @@ const DivisonCards = () => {
                         <div className="card-body items-center">
 
                             <h2 className="card-title text-4xl">
-                                Main Division
+                                MAIN DIVISION
                                 {/* <div className="badge badge-secondary">NEW</div> */}
                             </h2>
                             <div className='min-h-1/2'>
@@ -45,7 +45,7 @@ const DivisonCards = () => {
                         <div className="card-body items-center">
 
                             <h2 className="card-title  text-4xl">
-                                Inter Division
+                                INTER DIVISION
                             </h2>
                             <div className='min-h-1/2'>
                                 <p className='text-gray-400 '>Talented but unpolished.</p>
@@ -68,7 +68,7 @@ const DivisonCards = () => {
                         />
                         <div className="card-body items-center">
                             <h2 className="card-title text-4xl">
-                                Upper Division
+                                UPPER DIVISION
                             </h2>
                             <div className='min-h-1/2'>
                                 <p className='text-gray-400'>Talented but unpolished.</p>

@@ -73,7 +73,7 @@ const Season_1 = {
                     ]
                 },
                 {
-                    "name": "TNN",
+                    "name": "TEAM NO NAME",
                     "team_log": "/team-logos/Team No Name.jpg",
                     "slogan": "",
                     "players": [

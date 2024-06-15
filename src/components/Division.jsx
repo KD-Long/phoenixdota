@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Teams from './Teams'
 import Schedule from './Schedule'
-import Standings from './Standings'
-import GoogleSheetsTest from './GoogleSheetsTest'
+import GoogleSheetsTest from './leaderboard/GoogleSheetsTest.jsx'
+import LeaderBoard from './leaderboard/LeaderBoard.jsx'
 
 const Division = ({div}) => {
     console.log("Division: ",div)
@@ -35,8 +35,8 @@ const Division = ({div}) => {
             </div> */}
 
             <div className=''>
-                <GoogleSheetsTest />
-                <Standings div={div} />
+                {/* <GoogleSheetsTest /> */}
+                <LeaderBoard div={div} />
                 <Teams div={div}/>
                 <Schedule />
 

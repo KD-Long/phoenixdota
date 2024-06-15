@@ -39,9 +39,9 @@ const Landing = () => {
             {/* <GoogleForm /> */}
             <DivisonCards />
             {/* <About /> */}
-            <Phoenix />
+            {/* <Phoenix /> */}
             {/* <Schedule /> */}
-            <Team team={testTeam} />
+            {/* <Team team={testTeam} /> */}
             {/* <Teams /> */}
         </>
     )

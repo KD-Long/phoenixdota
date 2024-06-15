@@ -18,23 +18,25 @@ const Teams = ({ div }) => {
                 // console.log(`Key: ${teamKey}, Value: ${data_div.groups[teamKey]}`);
                 let group = data_div.groups[teamKey]
                 // console.log("Group xxxxx:", group)
-                return (<>
-                    <h1 className='text-xl font-bold my-10'>TEAMS</h1>
-                    <div key={teamKey} className=' bg-primary'>
-                        <h1 className='text-2xl text-black bg-softOrange text-center font-bold py-5'>
-                            {(`${div} Division ${teamKey}`).toLocaleUpperCase()}
-                        </h1>
-                        {/* Note to self gona have to chnage this for 1 for small screens */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-4 ">
-                            {
-                                group.map((teamData, i) => (
-                                    <TeamCard key={i} teamData={teamData} />
-                                ))
+                return (
+                    <div key={teamKey}>
+                        <h1 className='text-xl font-bold my-10'>TEAMS</h1>
+                        <div className=' bg-primary'>
+                            <h1 className='text-2xl text-black bg-softOrange text-center font-bold py-5'>
+                                {(`${div} Division ${teamKey}`).toLocaleUpperCase()}
+                            </h1>
+                            {/* Note to self gona have to chnage this for 1 for small screens */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-4 ">
+                                {
+                                    group.map((teamData, i) => (
+                                        <TeamCard key={i} teamData={teamData} />
+                                    ))
 
-                            }
+                                }
+                            </div>
                         </div>
                     </div>
-                </>
+
                 )
             })}
         </>

@@ -11,15 +11,15 @@ const Hero = () => {
                             className='w-1/2'
                             src="/other/PhoenixLogoShadowTransparent.png"
                         />
-                        <h1 className="text-4xl font-bold text-white font-hammersmith-one drop-shadow-custom-tight-dark">Phoenix Dota</h1>
+                        <h1 className="text-5xl font-bold text-white font-hammersmith-one drop-shadow-custom-tight-dark">PHOENIX DOTA</h1>
                         <h2
                             className='text-5xl text-white font-amatic-sc font-bold  drop-shadow-custom-dark'
                         >
                             HOSTING <span className='text-pdorange'>OCEANIC & SEA DOTA</span> LEAGUES
                         </h2>
                         <img
-                            className='w-1/5'
-                            src="/other/dotaSmall.png"
+                            className='w-1/10 pt-5 drop-shadow-custom-dark'
+                            src="/other/dotalogotransparent2.png"
                         />
                         {/* <div className='flex justify-center'>
                             <a href='https://discord.gg/MwK8fJd5cT'>

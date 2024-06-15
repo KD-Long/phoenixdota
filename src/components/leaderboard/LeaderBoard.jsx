@@ -1,12 +1,14 @@
-import React from 'react'
-import Team from './Team'
-import data from '../utils/teamData.js'
-import Season_1 from '../utils/Season_1.js'
+import React, { useState, useEffect } from 'react';
+import Season_1 from '../../utils/Season_1.js'
 import FixtureSectionCard from './FixtureSectionCard.jsx'
 import FixtureCard from './FixtureCard.jsx'
 
-const Standings = ({ div }) => {
+
+const LeaderBoard = ({ div }) => {
     const data_div = Season_1[div]
+
+    
+
     return (
         <>
             {/* <div className='h-[600px] border border-red-500'>
@@ -18,8 +20,6 @@ const Standings = ({ div }) => {
             <h1 className='text-xl font-bold my-10'>LEADERBOARD</h1>
 
             <div className=''>
-                {/* AU section + fixture */}
-
                 {Object.keys(data_div.groups).map(teamKey => {
                     // console.log(`Key: ${teamKey}, Value: ${data_div.groups[teamKey]}`);
                     let group = data_div.groups[teamKey]
@@ -49,4 +49,4 @@ const Standings = ({ div }) => {
     )
 }
 
-export default Standings
+export default LeaderBoard
