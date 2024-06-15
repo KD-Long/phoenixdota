@@ -21,7 +21,7 @@ const formatData = (data,group) => {
     const TeamNameInGroup = group.map((team) => {
         return team.name.toUpperCase();
     })
-    console.log('groupNAMES: ', TeamNameInGroup)
+    // console.log('groupNAMES: ', TeamNameInGroup)
 
     // For each row of the data  
     const filteredData = data.filter((row) => {
@@ -30,8 +30,6 @@ const formatData = (data,group) => {
 
         return TeamNameInGroup.includes(nameOfTeam1)
     })
-    console.log('$$$$$$$$filteredDATA: ', filteredData)
-
 
     return filteredData
 }
@@ -46,7 +44,7 @@ const filterGroupFromMatches = async (group) => {
         const csvText = await response.text();
         const parsedData = Papa.parse(csvText, { header: true });
         result = formatData(parsedData.data,group)
-        console.log('###### FILTER DATA UTIL: ', result)
+        // console.log('###### FILTER DATA UTIL: ', result)
     } catch (error) {
         console.error('Error fetching data:', error);
     }
