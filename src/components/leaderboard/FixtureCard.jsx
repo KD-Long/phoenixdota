@@ -5,7 +5,7 @@ import filterGroupFromMatches from '../../utils/filterGroupFromMatches.js'
 const FixtureCard = ({ group }) => {
     const [data, setData] = useState()
 
-    useEffect(()=>{
+    useEffect(() => {
         const fetchData = async () => {
             try {
                 // Note we are using a util func hear to do the google sheet read logic
@@ -20,7 +20,7 @@ const FixtureCard = ({ group }) => {
         };
 
         fetchData();
-    },[])
+    }, [])
 
 
     return (
@@ -44,7 +44,12 @@ const FixtureCard = ({ group }) => {
                                 {data && data.map((row, rowIndex) => (
                                     <tr key={rowIndex} className="">
                                         {Object.values(row).map((cell, cellIndex) => (
-                                            <td key={cellIndex} className="">{cell}</td>
+                                            <td
+                                                key={cellIndex}
+                                                className={cellIndex > 1 ? "text-center" : ""} // makes score and week text center
+                                            >
+                                                {cell}
+                                            </td>
                                         ))}
                                     </tr>
                                 ))}
