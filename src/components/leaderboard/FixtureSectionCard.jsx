@@ -27,6 +27,7 @@ const FixtureSectionCard = ({ group }) => {
         // Map of teams such that:
         // key=teamName
         // value=[games,wins]
+        console.log("data: ",data)
         let teamMap = new Map()
         data.forEach(match => {
             // if scores exist calc them otherwise set as 0
@@ -68,7 +69,7 @@ const FixtureSectionCard = ({ group }) => {
                 // be reused in section (cant put it in parent because it doesn knwo what group)
                 const filteredData = await filterGroupFromMatches(group)
                 const calcScores = calculateScores(filteredData)
-                // console.log("##### calcScores: ", calcScores)
+                console.log("##### calcScores: ", calcScores)
                 setData(calcScores)
             } catch (error) {
                 console.error('Error fetching data:', error);

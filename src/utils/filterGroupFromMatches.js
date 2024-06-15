@@ -10,7 +10,7 @@ import Papa from 'papaparse';
 //    ... 
 //]
 // where each item of array corresponds to a row
-const formatData = (data,group) => {
+const formatData = (data, group) => {
     if (data == null || data[0] == null) {
         console.log("NULL data")
         return null
@@ -23,7 +23,7 @@ const formatData = (data,group) => {
     })
     // console.log('groupNAMES: ', TeamNameInGroup)
 
-    // For each row of the data  
+    // For each row of the data keep only the ones that match
     const filteredData = data.filter((row) => {
         const nameOfTeam1 = row["Team 1"].toUpperCase()
         // if the team is in the group we want to include that in the data filter
@@ -31,7 +31,15 @@ const formatData = (data,group) => {
         return TeamNameInGroup.includes(nameOfTeam1)
     })
 
-    return filteredData
+    // Select only the first four columns for each row using destructuring
+    // Im just destructuring and returning this same items
+    const limitedData = filteredData.map(
+        ({ "Team 1": t1, "Team 2": t2, Score: score, Week: week }) => (
+            { "Team 1": t1, "Team 2": t2, Score: score, Week: week }
+        )
+    )
+
+    return limitedData
 }
 // note this is getting caleld once for each division *2 react strict == 6 times
 
@@ -43,7 +51,7 @@ const filterGroupFromMatches = async (group) => {
         const response = await fetch(publicSheetUrl);
         const csvText = await response.text();
         const parsedData = Papa.parse(csvText, { header: true });
-        result = formatData(parsedData.data,group)
+        result = formatData(parsedData.data, group)
         // console.log('###### FILTER DATA UTIL: ', result)
     } catch (error) {
         console.error('Error fetching data:', error);
