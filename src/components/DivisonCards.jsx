@@ -13,7 +13,7 @@ const DivisonCards = () => {
 
                         <img
                             className='w-3/4 mt-5'
-                            src="/other/mainDivPhoenix.png"
+                            src="/other/mainDivphoenixlarge.png"
                             alt="Main"
                         />
                         <div className="card-body items-center">
@@ -39,7 +39,7 @@ const DivisonCards = () => {
                     <div className="card flex w-full max-w-96 items-center bg-base-200 shadow-xl rounded-lg">
                         <img
                             className='w-3/4 mt-5'
-                            src="/other/inermediateDivPhoenix.png"
+                            src="/other/interDivphoenixlarge.png"
                             alt="Herald"
                         />
                         <div className="card-body items-center">
@@ -63,7 +63,7 @@ const DivisonCards = () => {
                     <div className="card flex w-full max-w-96 items-center bg-base-200 shadow-xl rounded-lg">
                         <img
                             className='w-3/4 mt-5'
-                            src="/other/upperDivPhoenix.png"
+                            src="/other/upperdivphoenixlarge.png"
                             alt="Herald"
                         />
                         <div className="card-body items-center">
