@@ -107,7 +107,7 @@ const FixtureSectionCard = ({ group }) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {data.map((team, i) => (
+                                {data && data.map((team, i) => (
                                     <tr key={i}>
                                         <td>{team.teamName}</td>
                                         <td>{team.seriesPlayed}</td>
