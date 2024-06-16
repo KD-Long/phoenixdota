@@ -44,6 +44,7 @@ const Leagues = () => {
                 <div className='flex min-h-[75vh] justify-center py-5 '>
                     <div role="tablist" className="tabs tabs-bordered overflow-x-auto w-full">
                         {tabs.map((item, i) => (
+
                             // This is a normal frag <></> but im overiddting so i can assign a Key to prevent warning
                             <React.Fragment key={item + i}>
                                 <div role="tab"
@@ -58,9 +59,7 @@ const Leagues = () => {
                             </React.Fragment>
                         ))}
 
-
                     </div>
-
                 </div>
 
             </div>

@@ -6,7 +6,7 @@ const Hero = () => {
         <>
             <div className="flex w-full min-h-[75vh] mb-20 items-center justify-center">
                 <div className="hero-content text-center text-neutral-content ">
-                    <div className="flex flex-col pb-40 items-center ">
+                    <div className="flex flex-col pb-40 items-center">
                         <img
                             className='w-1/2'
                             src="/other/PhoenixLogoShadowTransparent.png"
@@ -18,7 +18,7 @@ const Hero = () => {
                             HOSTING <span className='text-pdorange'>OCEANIC & SEA DOTA</span> LEAGUES
                         </h2>
                         <img
-                            className='w-1/10 pt-5 drop-shadow-custom-dark'
+                            className='w-1/10 pt-5 drop-shadow-custom-dark '
                             src="/other/dotalogotransparent2.png"
                         />
                         {/* <div className='flex justify-center'>

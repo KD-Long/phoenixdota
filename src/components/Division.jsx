@@ -4,43 +4,51 @@ import Schedule from './Schedule'
 import GoogleSheetsTest from './leaderboard/GoogleSheetsTest.jsx'
 import LeaderBoard from './leaderboard/LeaderBoard.jsx'
 
-const Division = ({div}) => {
-    console.log("Division: ",div)
+const Division = ({ div }) => {
+    console.log("Division: ", div)
 
     const tabs = [
-        "Standings",
-        "Schedule",
-        "Teams",
+        "LEADERBOARD",
+        "TEAMS",
     ]
     const [selectedTabName, setSelectedTabName] = useState(tabs[0])
 
     return (
         <>
             {/* Tabs */}
-            {/* <div className='flex w-full min-h-[75vh] justify-center border border-blue-500'>
-                <div role="tablist" className="tabs tabs-bordered  w-full border border-blue-500">
-                    {tabs.map((item) => (
-                        <>
-                            <div role="tab" onClick={() => setSelectedTabName(item)} className={`${selectedTabName === item ? "tab tab-active" : "tab"} `}> {item} </div>
-                            <div role="tabpanel" className="tab-content p-10  min-h-[75vh] border border-green-500">
-                                {item}
-                                
-                                {item === 'Standings' && <Standings />}
-                                {item === 'Schedule' && <Schedule />}
-                                {item === 'Teams' && <Teams />}
-                            </div>
-                        </>
-                    ))}
-                </div>
-            </div> */}
+            <div className='flex min-h-[75vh] justify-center py-5 '>
+                <div role="tablist" className="tabs tabs-bordered overflow-x-auto w-full">
+                    {tabs.map((item, i) => (
 
-            <div className=''>
-                {/* <GoogleSheetsTest /> */}
+                        // This is a normal frag <></> but im overiddting so i can assign a Key to prevent warning
+                        <React.Fragment key={item + i}>
+                            <div role="tab"
+                                onClick={() => setSelectedTabName(item)}
+                                className={selectedTabName === item ? "tab tab-active font-bold text-2xl" : "tab text-xl"}
+                            >
+                                {item}
+                            </div>
+                            <div role="tabpanel" className="tab-content py-10">
+                                
+                                {item === 'LEADERBOARD' && <LeaderBoard div={div} />}
+                                {item === 'TEAMS' && <Teams div={div} />}
+                            </div>
+                        </React.Fragment>
+                    ))}
+
+                </div>
+            </div>
+
+
+
+
+            {/* <div className=''>
+
                 <LeaderBoard div={div} />
-                <Teams div={div}/>
+                <Teams div={div} />
                 <Schedule />
 
-            </div>
+            </div> */}
 
 
 
