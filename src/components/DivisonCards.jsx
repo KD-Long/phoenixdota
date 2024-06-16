@@ -16,16 +16,18 @@ const DivisonCards = () => {
                             src="/other/mainDivphoenixlarge.png"
                             alt="Main"
                         />
-                        <div className="card-body items-center">
+                        <div className="card-body items-center text-center">
 
-                            <h2 className="card-title text-4xl">
+                            <h2 className="card-title text-4xl ">
                                 MAIN DIVISION
                                 {/* <div className="badge badge-secondary">NEW</div> */}
                             </h2>
                             <div className='min-h-1/2'>
-                                <p className='text-gray-400'>Training wheels required.</p>
-                                <p className='text-gray-400'>Freshly hatched chicks</p>
-                                <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p>
+                                <p className='text-gray-400 '>
+                                    Experience co-ordination that is Avant-Garde & warding more endangered than the Siberian tiger.
+                                </p>
+                                <p className='text-gray-400 '>These little hatchling's don't care about rank, but the memories & mayhem; making matches stories worth telling.</p>
+                                {/* <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p> */}
                             </div>
                             <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-herald">Herald</div>
@@ -42,7 +44,7 @@ const DivisonCards = () => {
                             src="/other/interDivphoenixlarge.png"
                             alt="Herald"
                         />
-                        <div className="card-body items-center">
+                        <div className="card-body items-center text-center">
 
                             <h2 className="card-title  text-4xl">
                                 INTER DIVISION
@@ -66,7 +68,7 @@ const DivisonCards = () => {
                             src="/other/upperdivphoenixlarge.png"
                             alt="Herald"
                         />
-                        <div className="card-body items-center">
+                        <div className="card-body items-center text-center">
                             <h2 className="card-title text-4xl">
                                 UPPER DIVISION
                             </h2>
