@@ -35,7 +35,7 @@ const FixtureCard = ({ group }) => {
                                 <tr>
                                     {/* This gets the keys of the objects that we use for header */}
                                     {data && data[0] && Object.keys(data[0]).map((header, index) => (
-                                        <th key={index} className="py-2 px-4 border-b">{header}</th>
+                                        <th key={index} className={ index<=1 ? "text-start py-2 border-b" : "py-2 border-b"}>{header}</th>
                                     ))}
                                 </tr>
                             </thead>

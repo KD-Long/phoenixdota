@@ -13,11 +13,8 @@ const TeamCard = ({ teamData }) => {
                         <table className="table-xs sm:table-xs w-full table-auto">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-
-
-
+                                    <th className='text-start'>Name</th>
+                                    <th className='text-start'>Position</th>
                                 </tr>
                             </thead>
                             <tbody>

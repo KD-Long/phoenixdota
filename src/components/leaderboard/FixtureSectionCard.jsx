@@ -87,8 +87,8 @@ const FixtureSectionCard = ({ group }) => {
 
                         <table className="table-sm w-full table-auto">
                             <thead>
-                                <tr className='py-2 px-4 border-b'>
-                                    <th >Team</th>
+                                <tr className='py-2 border-b'>
+                                    <th className='text-start'>Team</th>
                                     <th>Series Played</th>
                                     <th>Points</th>
                                     <th>Win %</th>
