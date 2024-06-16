@@ -30,9 +30,10 @@ const DivisonCards = () => {
                                 <p className='text-gray-400 '>These little hatchling's only care about the memories & mayhem; making stories worth telling.</p>
                                 {/* <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p> */}
                             </div>
-                            <div className="card-actions justify-end py-5">
+                            
+                            {/* <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-red-700">Avg 3k</div>
-                            </div>
+                            </div> */}
                             {/* old badges :( */}
                             {/* <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-herald">Herald</div>

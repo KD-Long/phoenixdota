@@ -16,7 +16,7 @@ const Division = ({ div }) => {
     return (
         <>
             {/* Tabs */}
-            <div className='flex min-h-[75vh] justify-center py-5 '>
+            <div className='flex min-h-[50vh] justify-center py-5 '>
                 <div role="tablist" className="tabs tabs-bordered overflow-x-auto w-full">
                     {tabs.map((item, i) => (
 
