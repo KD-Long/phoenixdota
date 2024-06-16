@@ -58,15 +58,14 @@ const DivisonCards = () => {
                                     INTER DIVISION
                                 </h2>
                                 <div className='min-h-1/2'>
-                                    <p className='text-gray-400 '>Talented but unpolished.</p>
-                                    <p className='text-gray-400'>Fiedglings unite</p>
-                                    <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}3000</span></p>
+                                    <p className='text-gray-400 '>Dangerous eagles ready and keen to throw wings.</p>
+                                    {/* <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}3000</span></p> */}
                                 </div>
-                                <div className="card-actions justify-end py-5">
+                                {/* <div className="card-actions justify-end py-5">
                                     <div className="badge badge-outline rounded-lg text-legend">Legend</div>
                                     <div className="badge badge-outline rounded-lg text-ancient">Ancient</div>
                                     <div className="badge badge-outline rounded-lg text-divine">Divine</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -81,20 +80,19 @@ const DivisonCards = () => {
                                     UPPER DIVISION
                                 </h2>
                                 <div className='min-h-1/2'>
-                                    <p className='text-gray-400'>Talented but unpolished.</p>
-                                    <p className='text-gray-400'>Fiedglings unite</p>
-                                    <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}5400</span></p>
+                                    <p className='text-gray-400'>The Infernal Phoenixes themselves here for the hottest competitiion they can find.</p>
+                                    {/* <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{">"}5400</span></p> */}
                                 </div>
-                                <div className="card-actions justify-end py-5">
+                                {/* <div className="card-actions justify-end py-5">
                                     <div className="badge badge-outline rounded-lg text-divine">Divine</div>
                                     <div className="badge badge-outline rounded-lg text-immortal">Immortal</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                     {/* TEXT FOOTER DESC */}
                     {/* Note dirty hard cap on with is to keep it aligned with card div above */}
-                    <div className='max-w-[1188px] mx-4 my-4 px-4 py-5 bg-base-200 rounded-xl text-gray-400 text-center'>
+                    <div className='max-w-[1188px] mx-4 my-4 px-4 py-5 bg-base-200 rounded-xl text-gray-400 text-center font-hammersmith-one'>
                     Phoenix Dota Leagues are open to teams of any skill level. Teams will be placed in appropriate divisions based on their skill as a team. It is advised that if there are large skill gaps between teammates (Inc. subs) the team may be placed in an unfavourable division.
                     </div>
                 </div>
