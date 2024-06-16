@@ -24,17 +24,23 @@ const DivisonCards = () => {
                             </h2>
                             <div className='min-h-1/2'>
                                 <p className='text-gray-400 '>
-                                    Experience co-ordination that is Avant-Garde & warding more endangered than the Siberian tiger.
+                                    Experience co-ordination that is Avant-Garde & warding more endangered than the Siberian tiger.<br />
                                 </p>
-                                <p className='text-gray-400 '>These little hatchling's don't care about rank, but the memories & mayhem; making matches stories worth telling.</p>
+                                <br />
+                                <p className='text-gray-400 '>These little hatchling's only care about the memories & mayhem; making stories worth telling.</p>
                                 {/* <p className='text-gray-400'>Average team mmr <span className='inline:block text-white font-bold'>{"<"}3000</span></p> */}
                             </div>
                             <div className="card-actions justify-end py-5">
+                                <div className="badge badge-outline rounded-lg text-red-700">Avg 3k</div>
+                            </div>
+                            {/* old badges :( */}
+                            {/* <div className="card-actions justify-end py-5">
                                 <div className="badge badge-outline rounded-lg text-herald">Herald</div>
                                 <div className="badge badge-outline rounded-lg text-guardian">Guardian</div>
                                 <div className="badge badge-outline rounded-lg text-crusader">Crusader</div>
                                 <div className="badge badge-outline rounded-lg text-archon">Archon</div>
-                            </div>
+                            </div> */}
+
                         </div>
                     </div>
 

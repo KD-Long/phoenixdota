@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
                 <div className="relative z-10 ">
                     {/* Your content here */}
                     {children}
-                    {/* <Footer /> */}
+                    <Footer />
                 </div>
             </div>
 

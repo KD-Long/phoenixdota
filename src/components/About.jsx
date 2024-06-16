@@ -37,7 +37,7 @@ const About = () => {
                 </div>
             </div>
 
-            <DivisonCards />
+            {/* <DivisonCards /> */}
 
             {/* league Format */}
             {/* <div>
