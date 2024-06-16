@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <>
             {/* Removed bg-base-200 to make bg image extent to top */}
-            <div className="flex navbar justify-center px-1/10">
+            <div className="flex navbar justify-center px-1/10 text-white">
 
                 <a
                     className="btn btn-ghost flex text-xl"
@@ -60,7 +60,7 @@ const Navbar = () => {
                         <button className="btn btn-ghost">
 
                             <img
-                                src='/discord_full.svg'
+                                src='/discord_full_white.svg'
                                 className='w-full h-full py-2 drop-shadow-custom-dark' 
                             />
 
