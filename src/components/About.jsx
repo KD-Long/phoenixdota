@@ -1,15 +1,18 @@
 import React from 'react'
-import DivisonCards from './DivisonCards'
+import GDocViewer from './GDocViewer'
+
 
 const About = () => {
     const rulesGdocsUrl = 'https://docs.google.com/document/d/e/2PACX-1vTkWKo1_PHsV8N8IBtXVPa68nwXeB6RgAPa0KE4f2FMksxg_arcT3Agd0YGF0SXrViccwElIWkF2eLa/pub?embedded=true'
+    // const docUrl = 'https://docs.google.com/document/d/1AHux92511WM834rP4xrslm3tl-AfJzDI_8pBRaYPuik/export?format=txt'; // Replace with your Google Doc export URL
+    const docUrl = 'https://docs.google.com/document/d/1RoqHK9g9UBNAg6rS7kc8n3H8ulAoKztJOlr4Ijkh9y0/export?format=html'; // Replace with your Google Doc export URL
 
     return (
         <>
             <div className="flex w-full min-h-[75vh] mb-20 items-center justify-center">
                 <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md flex flex-col items-center">
-                        <h1 className="mb-5 text-5xl font-bold text-white">Welcome to Phoenix <span className='text-orange-500'>Dota</span></h1>
+                    <div className="max-w-md flex flex-col items-center ">
+                        <h1 className="mb-5 text-5xl font-bold text-white text-center">Welcome to Phoenix <span className='text-orange-500'>Dota</span></h1>
 
                         <h2 className="mb-5 text-3xl font-bold text-white">Season 1</h2>
                         <p className="mb-5 w-2/3 text-xl text-red-700 font-bold bg-black p-1 rounded-lg">Signups open 17th May 2024</p>
@@ -37,36 +40,9 @@ const About = () => {
                 </div>
             </div>
 
-            {/* <DivisonCards /> */}
-
-            {/* league Format */}
-            {/* <div>
-                <div className='h-[600px] border border-red-500'>
-                    <div className='flex w-full h-full justify-center items-center border border-blue-500'>
-                        <h1>Format</h1>
-                    </div>
-                </div>
-            </div> */}
-
-            {/* Rule set */}
-            <div>
-                {/* TEMP FILLER */}
-                <div className=' border border-red-500'>
-                    <div className='flex w-full h-full min-h-[75vh] flex-col py-10 justify-center items-center border border-blue-500'>
-                        <h1 className='mb-5 text-3xl font-bold text-white'>League Rules</h1>
-                        <iframe
-                            src={rulesGdocsUrl}
-                            // width="75%"
-                            // height="600px"
-                            className='w-full min-h-[75vh] bg-black'
-                            style={{ backgroundColor: 'black', border: 'none' }}
-                        // title="Google Doc"
-                        ></iframe>
-                    </div>
-                </div>
-            </div>
-
-
+            {/* GDOC exported and inner html rendered */}
+            <GDocViewer docUrl={docUrl} />
+            
         </>
     )
 }

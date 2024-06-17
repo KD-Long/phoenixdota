@@ -17,7 +17,7 @@ export default {
         divine: '#D7C349',
         immortal: '#98221',
         softOrange: '#F3A457',
-        pdorange:'#F37135',
+        pdorange: '#F37135',
       },
       spacing: {
         '1/2': '50%',
