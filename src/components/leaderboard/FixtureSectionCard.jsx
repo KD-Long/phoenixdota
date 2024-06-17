@@ -86,15 +86,18 @@ const FixtureSectionCard = ({ group }) => {
                     <div className="overflow-x-auto w-full">
 
                         <table className="table-sm w-full table-auto">
-                            <thead>
-                                <tr className='py-2 border-b'>
-                                    <th className='text-start'>Team</th>
-                                    <th>Series Played</th>
-                                    <th>Points</th>
-                                    <th>Win %</th>
-                                </tr>
+                            <thead className=''>
+                                {data && <>
+                                    <tr className='py-2 border-b'>
+                                        <th className='text-start'>Team</th>
+                                        <th>Series Played</th>
+                                        <th>Points</th>
+                                        <th>Win %</th>
+                                    </tr>
+                                </>}
+
                             </thead>
-                            <tbody>
+                            <tbody className=''>
                                 {data && data.map((team, i) => (
                                     <tr key={i}>
                                         <td >{team.teamName}</td>
@@ -103,6 +106,18 @@ const FixtureSectionCard = ({ group }) => {
                                         <td className='text-center'>{team.Win}%</td>
                                     </tr>
                                 ))}
+                                {/* When data is loading display Loader */}
+                                {!data && <>
+                                    <tr>
+                                        <td colSpan="4">
+                                            <div className='w-full h-full flex justify-center items-center'>
+                                                {/* Loader */}
+                                                <div className="loading w-48 h-48 loading-ring loading-lg"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </>}
+
                             </tbody>
                         </table>
                     </div>

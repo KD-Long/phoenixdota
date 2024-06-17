@@ -35,7 +35,7 @@ const FixtureCard = ({ group }) => {
                                 <tr>
                                     {/* This gets the keys of the objects that we use for header */}
                                     {data && data[0] && Object.keys(data[0]).map((header, index) => (
-                                        <th key={index} className={ index<=1 ? "text-start py-2 border-b" : "py-2 border-b"}>{header}</th>
+                                        <th key={index} className={index <= 1 ? "text-start py-2 border-b" : "py-2 border-b"}>{header}</th>
                                     ))}
                                 </tr>
                             </thead>
@@ -53,6 +53,17 @@ const FixtureCard = ({ group }) => {
                                         ))}
                                     </tr>
                                 ))}
+                                {/* When data is loading display Loader */}
+                                {!data && <>
+                                    <tr>
+                                        <td colSpan="4">
+                                            <div className='w-full h-full flex justify-center items-center'>
+                                                {/* Loader */}
+                                                <div className="loading w-48 h-48 loading-ring loading-lg"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </>}
                             </tbody>
                         </table>
                     </div>
