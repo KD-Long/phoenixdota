@@ -4,7 +4,7 @@ import GDocViewer from './GDocViewer'
 
 const About = () => {
     const rulesGdocsUrl = 'https://docs.google.com/document/d/e/2PACX-1vTkWKo1_PHsV8N8IBtXVPa68nwXeB6RgAPa0KE4f2FMksxg_arcT3Agd0YGF0SXrViccwElIWkF2eLa/pub?embedded=true'
-    // const docUrl = 'https://docs.google.com/document/d/1AHux92511WM834rP4xrslm3tl-AfJzDI_8pBRaYPuik/export?format=txt'; // Replace with your Google Doc export URL
+    // const docUrl = 'https://docs.google.com/document/d/1AHux92511WM834rP4xrslm3tl-AfJzDI_8pBRaYPuik/export?format=html'; // Replace with your Google Doc export URL
     const docUrl = 'https://docs.google.com/document/d/1RoqHK9g9UBNAg6rS7kc8n3H8ulAoKztJOlr4Ijkh9y0/export?format=html'; // Replace with your Google Doc export URL
 
     return (

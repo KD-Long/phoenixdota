@@ -28,7 +28,7 @@ const DocumentViewer = ({ docUrl }) => {
                     // max-w-full makes sure content stay inside container
                     // lg: sets large screen max screen size
                     // items-center    --> will center the img but also all the headings (will ask nope to center from doc)
-                    className="flex flex-col bg-base-200 mx-1/10 px-1/10 py-16 max-w-full justify-center lg:max-w-[1270px] lg:mx-20 lg:px-20"
+                    className="flex flex-col bg-base-200 mx-1/10 px-1/10 py-16 max-w-full justify-center rounded-lg lg:max-w-[800px] lg:mx-20 lg:px-20"
                     dangerouslySetInnerHTML={{ __html: docContent }}
                 />
             </div>
