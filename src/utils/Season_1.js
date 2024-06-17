@@ -7,7 +7,7 @@ const Season_1 = {
             "aus_group_a": [
                 {
                     "name": "GAMING GUARDIANS",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "",
                     "players": [
                         { "name": "TBD", "steam_id": "steam_id", "position": "1" },
@@ -20,7 +20,7 @@ const Season_1 = {
                 },
                 {
                     "name": "BLACK HORSE ESPORTS",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "A symphony of skills",
                     "players": [
                         { "name": "Reaver 👑", "steam_id": "steam_id", "position": "1" },
@@ -34,7 +34,7 @@ const Season_1 = {
                 },
                 {
                     "name": "LITTLE PIGGIES",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "OINK OINK OINK",
                     "players": [
                         { "name": "JBud", "steam_id": "steam_id", "position": "1" },
@@ -190,7 +190,7 @@ const Season_1 = {
                 },
                 {
                     "name": "TEAM SEMI-SOLID",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "",
                     "players": [
                         { "name": "Mel", "steam_id": "steam_id", "position": "1" },
@@ -247,7 +247,7 @@ const Season_1 = {
                 },
                 {
                     "name": "GOON SQUAD",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "",
                     "players": [
                         { "name": "Oxytocin", "steam_id": "steam_id", "position": "1" },
@@ -327,7 +327,7 @@ const Season_1 = {
                 },
                 {
                     "name": "AUSTRIAN PAINTERS",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "",
                     "players": [
                         { "name": "R.E 👑", "steam_id": "steam_id", "position": "1" },
@@ -382,7 +382,7 @@ const Season_1 = {
                 },
                 {
                     "name": "FRIENDS WITHOUT BENEFITS",
-                    "team_log": "/team-logos/herald.webp",
+                    "team_log": "/team-logos/pd_gray.png",
                     "slogan": "",
                     "players": [
                         { "name": "3 inches is average", "steam_id": "steam_id", "position": "1" },
