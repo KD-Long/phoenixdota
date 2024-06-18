@@ -38,7 +38,7 @@ const FixtureRow = ({ row, group }) => {
                     </div>
                 </div>
                 <div className="col-span-1 text-center">
-                    <div>{score == "" ? "TBD" : score}</div>
+                    <div>{score == "" ? "TBD" : `${score[0]} - ${score[2]}`}</div>
                 </div>
                 <div className="col-span-2">
                     <div className="flex items-center justify-start pr-2">
