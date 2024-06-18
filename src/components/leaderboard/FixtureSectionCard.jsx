@@ -27,7 +27,7 @@ const FixtureSectionCard = ({ group }) => {
         // Map of teams such that:
         // key=teamName
         // value=[games,wins]
-        console.log("data: ", data)
+        // console.log("data: ", data)
         let teamMap = new Map()
         data.forEach(match => {
             // if scores exist calc them otherwise set as 0
@@ -67,7 +67,7 @@ const FixtureSectionCard = ({ group }) => {
                 // be reused in section (cant put it in parent because it doesn knwo what group)
                 const filteredData = await filterGroupFromMatches(group)
                 const calcScores = calculateScores(filteredData)
-                console.log("##### calcScores: ", calcScores)
+                // console.log("##### calcScores: ", calcScores)
                 setData(calcScores)
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -79,9 +79,10 @@ const FixtureSectionCard = ({ group }) => {
 
     return (
         <>
+        
             <div className='flex w-full h-full bg-black border-4 rounded-lg border-blue-900 '>
                 <div className='flex flex-col w-full sm:min-w-1/2 justify-center items-center py-5 '>
-                    {/* TABLE */}
+                    
                     <h1 className="text-2xl font-bold mb-4">Section</h1>
                     <div className="overflow-x-auto w-full">
 
@@ -106,12 +107,12 @@ const FixtureSectionCard = ({ group }) => {
                                         <td className='text-center'>{team.Win}%</td>
                                     </tr>
                                 ))}
-                                {/* When data is loading display Loader */}
+                                
                                 {!data && <>
                                     <tr>
                                         <td colSpan="4">
                                             <div className='w-full h-full flex justify-center items-center'>
-                                                {/* Loader */}
+                                                
                                                 <div className="loading w-48 h-48 loading-ring loading-lg"></div>
                                             </div>
                                         </td>
@@ -123,6 +124,9 @@ const FixtureSectionCard = ({ group }) => {
                     </div>
                 </div>
             </div >
+
+
+
         </>
     )
 }

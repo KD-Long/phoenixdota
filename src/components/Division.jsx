@@ -24,7 +24,7 @@ const Division = ({ div }) => {
                         <React.Fragment key={item + i}>
                             <div role="tab"
                                 onClick={() => setSelectedTabName(item)}
-                                className={selectedTabName === item ? "tab tab-active font-bold text-2xl text-white drop-shadow-custom-tight-dark" : "tab text-xl"}
+                                className={selectedTabName === item ? "tab tab-active font-bold text-2xl text-white drop-shadow-custom-tight-dark" : "tab  text-xl"}
                             >
                                 {item}
                             </div>
