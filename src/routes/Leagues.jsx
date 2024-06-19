@@ -32,9 +32,10 @@ const Leagues = () => {
                     <details id="dropdown-details" className="dropdown closed">
                         {/* &nbsp; == space */}
                         {/* &#9660 == arrow */}
-                        <summary className="m-1 btn open">{selectedSeason} &nbsp; &#9660;</summary>
+                        {/* &nbsp; &#9660; */}
+                        <summary className="m-1 btn open">{selectedSeason}</summary>
                         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                            <li><a onClick={() => { handleSeason("Season 1") }}>Season 1 <b>current*</b></a></li>
+                            <li><a onClick={() => { handleSeason("Season 1") }}>Season 1</a></li>
                             <li><a onClick={() => { handleSeason("Season 0") }}>Season 0</a></li>
                         </ul>
                     </details>

@@ -50,7 +50,9 @@ const FixtureCard = ({ group }) => {
                         { //For each row of the data then extract the values
                             data && data.map((row, rowIndex) => (
 
-                                <FixtureRow key={rowIndex} row={row} group={group} />
+                                <FixtureRow key={rowIndex} row={row} group={group
+                                    
+                                } />
 
 
                             ))}
