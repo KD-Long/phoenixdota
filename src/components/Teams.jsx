@@ -20,7 +20,7 @@ const Teams = ({ div }) => {
                 // console.log("Group xxxxx:", group)
                 return (
                     <div key={teamKey}>
-                        <h1 className='text-xl font-bold mb-10'>TEAMS</h1>
+                        {/* <h1 className='text-xl font-bold mb-10'>TEAMS</h1> */}
                         <div className=' bg-primary'>
                             <h1 className='text-2xl text-black bg-softOrange text-center font-bold py-5'>
                                 {(`${div} Division ${teamKey}`).toLocaleUpperCase()}

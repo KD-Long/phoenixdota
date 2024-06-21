@@ -16,7 +16,6 @@ const Leagues = () => {
     const [selectedTabName, setSelectedTabName] = useState(tabs[0])
 
 
-
     const handleSeason = (season) => {
         setSelectedSeason(season)
         //removing 'open' closes the drop down

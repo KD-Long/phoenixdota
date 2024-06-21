@@ -17,7 +17,7 @@ const LeaderBoard = ({ div }) => {
                     <Team team={testTeam}/>
                 </div>
             </div> */}
-            <h1 className='text-xl font-bold mb-10'>LEADERBOARD</h1>
+            {/* <h1 className='text-xl font-bold mb-10'>LEADERBOARD</h1> */}
 
             <div className=''>
                 {Object.keys(data_div.groups).map(teamKey => {
