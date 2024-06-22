@@ -31,7 +31,6 @@ const Teams = ({ div }) => {
                                     group.map((teamData, i) => (
                                         <TeamCard key={i} teamData={teamData} />
                                     ))
-
                                 }
                             </div>
                         </div>
