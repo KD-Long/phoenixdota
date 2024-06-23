@@ -5,7 +5,7 @@ import FixtureRow from './FixtureRow.jsx';
 // group is the full json of that group
 const FixtureCard = ({ group }) => {
     const [data, setData] = useState()
-    
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -31,7 +31,8 @@ const FixtureCard = ({ group }) => {
 
             {/* sets bg  container*/}
             <div className="bg-gray-800 text-white p-4">
-            <h1 className="text-2xl font-bold mb-4 text-center">Fixture</h1>
+                <h1 className="text-2xl font-bold mb-4 text-center">
+                    Fixture</h1>
                 {/* Sets indentation of rows with max size */}
                 <div className="max-w-5xl mx-auto">
                     {/* GRID header */}
@@ -50,10 +51,7 @@ const FixtureCard = ({ group }) => {
                         { //For each row of the data then extract the values
                             data && data.map((row, rowIndex) => (
 
-                                <FixtureRow key={rowIndex} row={row} group={group
-                                    
-                                } />
-
+                                <FixtureRow key={rowIndex} row={row} group={group} />
 
                             ))}
                         {// When data is loading display Loader

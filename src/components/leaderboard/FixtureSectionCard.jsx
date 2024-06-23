@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import filterGroupFromMatches from '../../utils/filterGroupFromMatches.js'
+import SectionRow from './SectionRow.jsx';
 
 const FixtureSectionCard = ({ group }) => {
 
@@ -79,51 +80,62 @@ const FixtureSectionCard = ({ group }) => {
 
     return (
         <>
-        
-            <div className='flex w-full h-full bg-black border-4 rounded-lg border-blue-900 '>
-                <div className='flex flex-col w-full sm:min-w-1/2 justify-center items-center py-5 '>
-                    
-                    <h1 className="text-2xl font-bold mb-4">Section</h1>
-                    <div className="overflow-x-auto w-full">
 
-                        <table className="table-sm w-full table-auto">
-                            <thead className=''>
-                                {data && <>
-                                    <tr className='py-2 border-b'>
-                                        <th className='text-start'>Team</th>
-                                        <th>Series Played</th>
-                                        <th>Points</th>
-                                        <th>Win %</th>
-                                    </tr>
-                                </>}
+            <div className="bg-gray-800 text-white p-4">
+                <h1 className="text-2xl font-bold mb-4 text-center">
+                    Section</h1>
+                {/* Sets indentation of rows with max size */}
+                <div className="max-w-5xl mx-auto">
 
-                            </thead>
-                            <tbody className=''>
-                                {data && data.map((team, i) => (
-                                    <tr key={i}>
-                                        <td >{team.teamName}</td>
-                                        <td className='text-center'>{team.seriesPlayed}</td>
-                                        <td className='text-center'>{team.Points}</td>
-                                        <td className='text-center'>{team.Win}%</td>
-                                    </tr>
-                                ))}
-                                
-                                {!data && <>
-                                    <tr>
-                                        <td colSpan="4">
-                                            <div className='w-full h-full flex justify-center items-center'>
-                                                
-                                                <div className="loading w-48 h-48 loading-ring loading-lg"></div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </>}
-
-                            </tbody>
-                        </table>
+                    {/* GRID header */}
+                    <div className="grid">
+                        <div className="grid grid-cols-6 text-center p-4 bg-base-200 border-b">
+                            <div className="col-span-2">Team</div>
+                            <div className="col-span-1">Games</div>
+                            <div className="col-span-2">Wins</div>
+                            <div className="col-span-1">Win%</div>
+                        </div>
                     </div>
+
+                    {/* <tbody className=''>
+                        {data && data.map((team, i) => (
+                            <tr key={i}>
+                                <td >{team.teamName}</td>
+                                <td className='text-center'>{team.seriesPlayed}</td>
+                                <td className='text-center'>{team.Points}</td>
+                                <td className='text-center'>{team.Win}%</td>
+                            </tr>
+                        ))} */}
+                    {/* Grid container */}
+                    <div className="grid gap-1">
+                        {/* Row Card backing of all cols within */}
+                        { //For each row of the data then extract the values
+                            data && data.map((row, rowIndex) => (
+                                <SectionRow
+                                    key={rowIndex}
+                                    group={group}
+                                    teamName={row.teamName}
+                                    gamesPlayed={row.seriesPlayed}
+                                    wins={row.Points}
+                                    win={row.Win}
+                                />
+                            ))}
+                        {// When data is loading display Loader
+                            !data && <>
+                                <div>
+                                    <div className="col-span-2">
+                                        <div className='w-full h-full flex justify-center items-center'>
+                                            <div className="loading w-48 h-48 loading-ring loading-lg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </>}
+
+                    </div>
+
                 </div>
             </div >
+
 
 
 

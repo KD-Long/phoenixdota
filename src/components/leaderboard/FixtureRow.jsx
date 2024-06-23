@@ -13,11 +13,16 @@ const FixtureRow = ({ row, group }) => {
     // console.log("group: ",group)
 
     // note this is susuptible to bad imput with extra spaces or missspellings
+    // This should find the data linked to the two teams (should only be one)
+    // square brackets just gets first ietem of array
     let [team1Data] = group.filter((value) => value.name == row["Team 1"].toUpperCase().trim())
     let [team2Data] = group.filter((value) => value.name == row["Team 2"].toUpperCase().trim())
     // console.log("team1Data: ",team1Data)
     // console.log("team2Data: ",team2Data)
 
+    
+    // Note if there is a mistake in the matchs and a two teams from different groups the url will be undefined
+    // I will mark them as herald as a visual queue for me that something is incorrect
     const team1ImgURL = team1Data ? team1Data.team_log : '/ranks/herald.webp';
     const team2ImgURL = team2Data ? team2Data.team_log : '/ranks/herald.webp';
     // console.log("team1ImgURL: ",team1ImgURL)
