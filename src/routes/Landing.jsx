@@ -8,6 +8,7 @@ import Hero from '../components/Hero.jsx'
 import data from '../utils/teamData.js'
 
 import DivisonCards from '../components/DivisonCards.jsx';
+import SteamPlayer from '../components/SteamPlayer.jsx';
 
 
 
@@ -40,6 +41,8 @@ const Landing = () => {
             {/* <Schedule /> */}
             {/* <Team team={testTeam} /> */}
             {/* <Teams /> */}
+
+            <SteamPlayer steamId={"76561198065323370"}/>
 
      
         </>
