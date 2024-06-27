@@ -13,9 +13,7 @@ import SteamPlayer from '../components/SteamPlayer.jsx';
 
 
 const Landing = () => {
-    const navigate = useNavigate();
-
-    let testTeam = data.season0.leagues[0].teams[1]
+    
     return (
         <>
 

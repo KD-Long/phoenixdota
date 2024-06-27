@@ -10,7 +10,7 @@ import './App.css'
 import Team from './components/Team.jsx'
 import Navbar from './components/Navbar.jsx'
 
-import About from './components/About.jsx'
+import About from './routes/About.jsx'
 
 import Landing from './routes/Landing.jsx';
 import Leagues from './routes/Leagues.jsx';
